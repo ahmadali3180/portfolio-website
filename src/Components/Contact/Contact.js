@@ -69,7 +69,7 @@ function Contact() {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="ContactFormMainFor"
+              className="ContactFormMainForm"
             >
               <div className="CFInputContainer">
                 <p className="CFInputPH">Full Name</p>
