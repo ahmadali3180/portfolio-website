@@ -101,13 +101,6 @@ body ::-webkit-scrollbar-thumb {
   background-color: #1f2235;
 }
 
-/* 
-@media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
-
 .PrimaryBtn:hover {
   color: aliceblue;
   border: 2px solid #ff5823;
@@ -131,7 +124,7 @@ body ::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 568px) {
-  .Highlighted-btn {
+  .HighlightedBtn {
     z-index: -900;
   }
 }

@@ -1,0 +1,111 @@
+/* Styles for Testimonial */
+
+.TestimonialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: fit-content;
+  margin-bottom: 4rem;
+}
+
+.TestimonialParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-top: 4rem;
+  background-image: url("../../assets/fonts/bg.jpg");
+  padding-top: 2rem;
+}
+
+.TestimonialParent .ParentHeading,
+.TestimonialParent .ParentSubHeading {
+  color: white;
+}
+
+.TestimonialParent .ParentDivisionLineSide {
+  background-color: #fff;
+  width: 100%;
+  height: 0px;
+  border-bottom: 3px solid white;
+}
+
+.TestimonialMainCntContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-inline: 2.5rem;
+}
+
+/* Styles For Testimonial Card */
+
+.TCContainer {
+  width: 23.5%;
+  height: auto;
+  border-radius: 42px 42px 42px 0;
+  padding: 1rem 1.3rem;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+.TCParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.TCClientReviewText {
+  font-size: 0.875rem;
+  font-family: "Poppins Light";
+  width: 97.5%;
+  text-align: left;
+  line-height: 130%;
+  padding: 0.25rem 0.5rem;
+}
+
+.TCRatingIcons {
+  margin-bottom: 1rem;
+}
+
+.TCClientParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.TCClientProfilePicCnt {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-orange);
+}
+
+.TCClientProfilePic {
+  width: 99%;
+  height: 99%;
+  border-radius: 50%;
+}
+
+.TCClientInfoView {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.ClientNameText {
+  font-size: 0.92rem;
+  font-family: "Poppins Medium";
+  line-height: 93%;
+  margin: 0.25rem 0 0.25rem 1rem;
+}
+
+.ClientJobText {
+  font-size: 0.8rem;
+  font-family: "Poppins Regular";
+  margin: 0.25rem 0 0.25rem 1rem;
+  line-height: 93%;
+}

@@ -1,0 +1,118 @@
+/* Styles For Contact */
+
+.ContactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: fit-content;
+  height: 12.5%;
+  margin-bottom: 4rem;
+}
+
+.ContactParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  color: #111;
+  margin-top: 4rem;
+}
+
+/* Styles For Form Card */
+
+.ContactFormContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 85%;
+  height: auto;
+  min-height: 400px;
+  border-radius: 1rem;
+  box-shadow: 0px 14px 37px 3px rgba(0, 0, 0, 0.25);
+  background-color: #1f2235;
+}
+
+.CFOtherView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.CFOtherView h1 {
+  color: white;
+  font-family: "Poppins SemiBold";
+}
+
+/* Contact form Parent */
+
+.ContactFormParent {
+  width: 50%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.ContactFormMainForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CFInputContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0.75rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.CFInputPH {
+  font-size: 1rem;
+  font-family: "Poppins Medium";
+  color: #1f2235;
+  line-height: 50%;
+  margin-bottom: 1rem;
+}
+
+.CFInputField {
+  background: none;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  color: rgb(72, 72, 72);
+}
+
+.CFTextArea {
+  background: none;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 0.875rem;
+  color: rgb(72, 72, 72);
+}
+
+.CFSendButtonContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.CFSendButton {
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.CfSendIcon {
+  transform: rotate(315deg);
+  margin-left: 1rem;
+}

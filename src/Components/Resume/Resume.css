@@ -94,7 +94,7 @@
   display: grid;
   padding: 1.5rem;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2.5rem;
+  grid-gap: 1.25rem;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -107,7 +107,7 @@
 .RPSkillParent {
   display: flex;
   flex-direction: column;
-  align-items: last baseline;
+  justify-content: space-between;
 }
 
 .RPSkillName {
@@ -120,14 +120,14 @@
 
 .RPSkillProgressContainer {
   display: flex;
-  height: 12px;
-  width: 50%;
-  border-radius: 12px 0px;
+  height: 14px;
+  width: 10rem;
+  border-radius: 12px;
   background-color: var(--dark-orange);
 }
 
 .RPSkillProgressContent {
-  border-radius: 12px 0px;
+  border-radius: 12px;
   background-color: #1f2235;
 }
 
@@ -286,5 +286,25 @@
 @media only screen and (max-width: 480px) {
   .ResumeCard {
     width: 95%;
+  }
+  .RPSkillProgressContainer {
+    width: 8rem;
+  }
+  .LPButton,
+  .LPButton.selected {
+    font-size: 12px;
+  }
+  .LeftPart {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .LPButton,
+  .LPButton.selected {
+    font-size: 10px;
+  }
+  .RPSkillProgressContainer {
+    width: 7.5rem;
   }
 }

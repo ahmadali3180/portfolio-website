@@ -15,6 +15,19 @@ function Resume() {
   const toggleSelectedButton = (button) => {
     setSelectedButton(button);
   };
+
+  function RightPartElement() {
+    return (
+      <div>
+        {selectedButton === "button1" && <EducationDisplay />}
+        {selectedButton === "button2" && <WorkHistoryDisplay />}
+        {selectedButton === "button3" && <ProgrammingSkills />}
+        {selectedButton === "button4" && <ProjectsDisplay />}
+        {selectedButton === "button5" && <InterestDisplay />}
+      </div>
+    );
+  }
+
   return (
     <div className="width-100 ResumeContainer">
       <div className="res-1440-in ResumeParent">
@@ -97,24 +110,6 @@ function Resume() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-// Right Part Elements
-
-function RightPartElement() {
-  const [selectedButton, setSelectedButton] = useState("button1");
-  const toggleSelectedButton = (button) => {
-    setSelectedButton(button);
-  };
-  return (
-    <div>
-      {selectedButton === "button1" && <EducationDisplay />}
-      {selectedButton === "button2" && <WorkHistoryDisplay />}
-      {selectedButton === "button3" && <ProgrammingSkills />}
-      {selectedButton === "button4" && <ProjectsDisplay />}
-      {selectedButton === "button5" && <InterestDisplay />}
     </div>
   );
 }
