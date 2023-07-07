@@ -1,0 +1,188 @@
+/* Styles For Profile */
+
+.ProfileContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+}
+
+.ProfileParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  color: aliceblue;
+  margin-top: 2rem;
+}
+
+/* Profile Details */
+
+.ProfileDetailsName {
+  font-size: 1.5rem;
+  font-family: "Poppins SemiBold";
+}
+
+.ProfileDetailsRole {
+  display: flex;
+  flex-direction: column;
+  margin: 0.875rem 0 1.5rem 0;
+}
+
+.ProfileDetailsRole h1 {
+  font-size: 2.5rem;
+  font-family: monospace;
+}
+
+/* Text */
+
+.PrimaryText {
+  color: var(--white);
+}
+
+.HighlightedText {
+  color: var(--dark-orange);
+}
+
+.ProfileRoleTagline {
+  font-size: 1.12rem;
+  margin: 0.313rem 0 0 0;
+  font-family: "Poppins Light";
+}
+
+.ProfileOptions .HighlightedBtn {
+  margin: 0 0 0 1.75rem;
+}
+
+.ProfileOptions {
+  margin-bottom: 2rem;
+}
+
+.ProfileOptions .HighlightedBtn:hover {
+  margin: 0 0 0 1.75rem;
+  background-color: cornsilk;
+  color: #111;
+}
+
+.ProfilePicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1.5px 0 0 var(--white);
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  margin: 0 0 0 6.25rem;
+}
+
+.ProfilePictureBackground {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/fonts/eid3.pdf");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in;
+}
+
+.ProfilePictureBackground:hover {
+  transform: scale(1.07);
+  transition: 0.5s ease-out;
+}
+
+.colz .colz-icon i {
+  color: var(--white);
+  padding: 8px 8px 8px 0;
+}
+
+.colz .colz-icon i:hover {
+  transform: scale(1.5);
+  transition: 0.175s ease;
+}
+
+/* Media Querries */
+
+@media only screen and (max-width: 1200px) {
+  .ProfilePicture {
+    margin: 0 0px 0 5rem;
+  }
+  .ProfileDetailsName {
+    font-size: 1.8rem;
+  }
+  .ProfileDetailsRole .PrimaryText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .ProfilePicture {
+    height: 300px;
+    width: 300px;
+    margin: 0 0 0 1.5rem;
+  }
+  .ProfileDetailsName {
+    font-size: 1.1rem;
+  }
+  .ProfileDetailsRole .PrimaryText {
+    font-size: 0.6rem;
+  }
+  .ProfileOptions .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media only screen and (max-width: 913px) {
+  .ProfilePicture {
+    margin: 0 !important;
+  }
+  .ProfileDetails {
+    margin: 1.4rem 0 0;
+  }
+  .ProfileOptions .HighlightedBtnn {
+    margin: 0 !important;
+  }
+  .ProfileDetailsName,
+  .ProfileDetailsRole {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .ProfilePicture {
+    margin: 0 !important;
+  }
+  .ProfileParent {
+    flex-direction: column-reverse;
+    margin: 2.5rem 0 0 0;
+  }
+  .ProfileOptions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .ProfileDetails {
+    margin: 1.5rem 0 0;
+  }
+  .ProfileOptions .HighlightedBtnn {
+    margin: 0 !important;
+  }
+  .ProfileDetailsName,
+  .ProfileDetailsRole {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .ProfilePicture {
+    height: 270px;
+    width: 270px;
+    margin-top: -5.6rem;
+  }
+  .ProfileDetails {
+    width: 90%;
+  }
+}

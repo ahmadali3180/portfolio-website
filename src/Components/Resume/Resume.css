@@ -1,0 +1,290 @@
+/* Styles For Resume */
+
+.ResumeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: fit-content;
+  height: 12.5%;
+  margin-bottom: 4rem;
+}
+
+.ResumeParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  color: #111;
+  margin-top: 4rem;
+}
+
+.ResumeCard {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  border-radius: 1rem;
+  box-shadow: 0px 14px 37px 3px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  height: auto;
+  transition: 0.3s ease-in;
+}
+
+/* Right Part */
+
+.RightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  width: 60%;
+  padding: 1.25rem 0;
+}
+
+.RPInstituteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem;
+}
+
+.RPInstituteDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.RPInstituteNameText {
+  font-size: 1rem;
+  font-family: "Poppins Bold";
+  color: var(--dark-orange);
+}
+
+.RPProgramDateText {
+  font-size: 0.75em;
+  font-family: "Poppins Medium";
+  color: #fff;
+  background-color: var(--dark-orange);
+  padding: 0.225rem 0.45rem;
+  border-radius: 20px;
+}
+
+.RPProgramText {
+  font-size: 0.905rem;
+  font-family: "Poppins Medium";
+  color: #000;
+  text-align: left;
+}
+
+.RPProgramDetails {
+  font-size: 0.875rem;
+  font-family: "Poppins";
+  color: #000;
+  text-align: left;
+}
+
+/* Programming Skills */
+
+.RPSkillsMainCnt {
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.RPSkillsContainer {
+  padding: 0.25rem;
+}
+
+.RPSkillParent {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+}
+
+.RPSkillName {
+  font-size: 1rem;
+  font-family: "Poppins Bold";
+  text-align: left;
+  margin-bottom: 0.25rem;
+  color: var(--dark-orange);
+}
+
+.RPSkillProgressContainer {
+  display: flex;
+  height: 12px;
+  width: 50%;
+  border-radius: 12px 0px;
+  background-color: var(--dark-orange);
+}
+
+.RPSkillProgressContent {
+  border-radius: 12px 0px;
+  background-color: #1f2235;
+}
+
+.Skill-1 {
+  width: 78%;
+}
+
+.Skill-2 {
+  width: 84%;
+}
+
+.Skill-3 {
+  width: 91%;
+}
+
+/* Left Part */
+
+.LeftPart {
+  width: 30%;
+}
+
+.LPButtonMainCnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.LPButton {
+  border: none;
+  background: none;
+  background-color: #fff;
+  color: #1f2235;
+  padding: 0.75rem 1rem;
+  font-size: 0.925rem;
+  font-family: "Poppins Medium";
+  margin: 0.5rem 0;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+
+.LPButton.selected {
+  border: none;
+  background: none;
+  background-color: #1f2235;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 0.925rem;
+  font-family: "Poppins Medium";
+  margin: 0.5rem 0;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+
+.LPButton span {
+  justify-self: right;
+}
+
+.LPIcon {
+  color: #1f2235;
+}
+
+.LPButton.selected .LPIcon {
+  color: white;
+}
+
+/* Media Querries */
+
+@media only screen and (max-width: 992px) {
+  .ResumeCard {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .ResumeCard {
+    width: 93.75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ResumeCard {
+    flex-direction: column-reverse;
+  }
+  .RightPart {
+    width: 90%;
+  }
+  .LeftPart {
+    width: 90%;
+  }
+  .LPButtonMainCnt {
+    display: flex;
+    flex-direction: row;
+  }
+  .LPButton,
+  .LPButton.selected {
+    text-align: center;
+  }
+  .LPButton span {
+    display: none;
+  }
+  .RPSkillParent {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .ResumeCard {
+    width: 95.75%;
+  }
+  .RightPart {
+    width: 85%;
+    padding-inline-end: 0.33rem;
+    text-align: left;
+  }
+  .LeftPart {
+    width: 97%;
+  }
+  .LPButton,
+  .LPButton.selected {
+    font-size: 14px;
+    text-align: center;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .ResumeCard {
+    width: 95%;
+  }
+  .RPInstituteNameText {
+    font-size: 16px;
+  }
+  .RPProgramDateText {
+    font-size: 14px;
+    padding: 0.3 0.6rem;
+    text-align: center;
+  }
+  .LPButton,
+  .LPButton.selected {
+    font-size: 12px;
+    text-align: center;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ResumeCard {
+    width: 95%;
+  }
+}
